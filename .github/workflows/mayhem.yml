@@ -4,16 +4,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-  DOMTREE_MAYHEMFILE: mayhem/domtree.mayhemfile
-  ION_MAYHEMFILE: mayhem/ion.mayhemfile
-  IONCHECKER_MAYHEMFILE: mayhem/ion_checker.mayhemfile
-  MOVES_MAYHEMFILE: mayhem/moves.mayhemfile
-  SSAGEN_MAYHEMFILE: mayhem/ssagen.mayhemfile
-  
-
 jobs:
   build:
     name: ${{ matrix.os }} shared=${{ matrix.shared }} ${{ matrix.build_type }}
