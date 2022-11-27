@@ -12,7 +12,7 @@ env:
   IONCHECKER_MAYHEMFILE: mayhem/ion_checker.mayhemfile
   MOVES_MAYHEMFILE: mayhem/moves.mayhemfile
   SSAGEN_MAYHEMFILE: mayhem/ssagen.mayhemfile
-  
+
 jobs:
   build:
     name: ${{ matrix.os }} shared=${{ matrix.shared }} ${{ matrix.build_type }}
