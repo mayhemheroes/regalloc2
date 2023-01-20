@@ -1,0 +1,6 @@
+image: tngo04/regalloc2:latest
+project: tngo04/regalloc2
+target: ion
+
+cmds:
+  - cmd: /ion
